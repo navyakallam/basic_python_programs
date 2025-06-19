@@ -1,0 +1,75 @@
+# 1. Sum of Two Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("The sum is:", a + b)
+
+# ------------------------------------------------------------
+
+# 2. Odd or Even
+n = int(input("Enter a number: "))
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+# ------------------------------------------------------------
+
+# 3. Factorial of a Number
+
+x = int(input("Enter a number: "))
+fact = 1
+for i in range(1, x+1):
+    fact = fact * i
+print("Factorial:", fact)
+
+# ------------------------------------------------------------
+
+# 4. Fibonacci Series
+n = int(input("How many terms: "))
+a = 0
+b = 1
+for i in range(n):
+    print(a)
+    c = a + b
+    a = b
+    b = c
+
+# ------------------------------------------------------------
+
+# 5. Reverse a String
+a = input("Enter a string: ")
+print("Reversed string is:", a[::-1])
+
+# ------------------------------------------------------------
+
+# 6. Palindrome Check
+a = input("Enter a string to check palindrome: ")
+if a == a[::-1]:
+    print("True")
+else:
+    print("False")
+
+# ------------------------------------------------------------
+
+# 7. Leap Year Check
+a = int(input("Enter a year: "))
+if (a % 4 == 0 and a % 100 != 0) or (a % 400 == 0):
+    print("True")
+else:
+    print("False")
+
+# ------------------------------------------------------------
+
+# 8. Armstrong Number
+n = int(input("Enter a number: "))
+a = len(str(n))
+sum = 0
+temp = n
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** a
+    temp = temp // 10
+if sum == n:
+    print("True")
+else:
+    print("False")
